@@ -1,0 +1,108 @@
+body{
+    background-color: #CD8250;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.gridContainer{
+    width:603px;
+    height:430px;
+    margin:50px auto;
+    background-color: #FFFFFF;
+    border-radius:10px;
+    
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap:2px;
+    grid-template-areas: 
+    "perfil posts"
+    "perfil likes"
+    "perfil follower";
+} 
+.perfil{
+    grid-area: perfil;
+    width:400px;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-top: 30px;
+    border-radius:10px;
+    
+}
+.perfil img{
+    border-radius:50%;
+}
+.perfil h1{
+    font-size:26px;
+    color:#918171;
+    margin-bottom:0px;
+    padding-bottom:0px;
+
+}
+.perfil p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:14px;
+    margin-top:2px;
+    padding-top:0px;
+    color:#918171;
+}
+button{
+    margin: 10px auto 10px;
+    padding: 7px 60px;
+    border-radius: 15px;
+    border:2px #918171 solid;
+    background-color: white;
+    color:#918171;
+    font-weight: bolder;
+    transition:background-color .2s, color .2s;
+}
+button:hover{
+    cursor:pointer;
+}
+.posts{
+    grid-area:posts;
+}
+.likes{
+    grid-area:likes;
+}
+.follower{
+    grid-area: follower;
+}
+.posts, .likes, .follower{
+    width:201px;
+    background-color: #F5E8DF;
+    text-align: center;
+
+}
+.posts{
+    border-radius: 0px 10px 0px 0px;
+    
+}
+.follower{
+    border-radius: 0px 0px 10px 0px;
+}
+.caixa_text{
+    padding-top:33px;
+    transition: background-color .3s;
+}
+.caixa_text:hover{
+    background-color: #c4aea0;
+}
+.text{
+    display:inline-block;
+    width:100px;
+    font-size:28px;
+    font-weight:normal;
+    color: #796652;
+}
+.text:last-child{
+    font-size:18px;
+    font-weight:lighter;
+}
+.fundo{
+    background-color: #918171;
+    color:white;
+}
+
+
+
